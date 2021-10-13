@@ -3,20 +3,18 @@ package ru.job4j.converter;
 public class Converter {
 
     public static float rubleToEuro(float value) {
-        float rsl = value / 70;
-        return rsl;
+        return value / 70;
     }
 
     public static float rubleToDollar(float value) {
-        float rsl = value / 60;
-        return rsl;
+        return -1;
     }
 
     public static void main(String[] args) {
-        float rubles = 140f;
-        float euroInRubles = Converter.rubleToEuro(rubles);
-        float dollarInRubles = Converter.rubleToDollar(rubles);
-        System.out.println(rubles + " rubles are " + euroInRubles  + " euro.");
-        System.out.println(rubles + " rubles are " + dollarInRubles + " dollar.");
+        float in = 140;
+        float expected = 2;
+        float out = Converter.rubleToEuro(in);
+        boolean passed = expected == out;
+        System.out.println("140 rubles are 2. Test result : " + passed);
     }
 }
