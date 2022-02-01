@@ -61,4 +61,15 @@ class FindLoopTest {
         /* Дописать тест, когда элемент 8 в диапазоне не найден.
         Можно искать любой другой элемент, корректно отражая этот факт в названии теста. */
     }
+
+    @Test
+    public void whenFind15() {
+        int[] data = new int[] {5, 2, 10, 2, 4};
+        int el = 15;
+        int start = 2;
+        int finish = 4;
+        int result = FindLoop.indexOf(data, el, start, finish);
+        int expected = -1;
+        Assert.assertEquals(expected, result);
+    }
 }
