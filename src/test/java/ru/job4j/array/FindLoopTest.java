@@ -63,7 +63,7 @@ class FindLoopTest {
     }
 
     @Test
-    public void whenFind15() {
+    public void whenArrayHasNot15InDiapason2to4ThenMinus1() {
         int[] data = new int[] {5, 2, 10, 2, 4};
         int el = 15;
         int start = 2;
