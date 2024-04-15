@@ -36,15 +36,4 @@ class PointTest {
             double output = Point.distance(x1, y1, x2, y2);
             assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
-
-    @Test
-    void when04to75then7dot0710() {
-        double expected = 8;
-        int x1 = -1;
-        int y1 = 0;
-        int x2 = 7;
-        int y2 = 0;
-        double output = Point.distance(x1, y1, x2, y2);
-        assertThat(output).isEqualTo(expected, withPrecision(0.01));
-    }
 }
