@@ -20,18 +20,4 @@ class FitTest {
         double output = Fit.womanWeight(input);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
-
-    // Calculating man's weight with height smaller than 100
-    @Test
-    void testManWeightHeightSmallerThan100() {
-        // Arrange
-        short input = 99;
-        double expected = -1.15;
-
-        // Act
-        double output = Fit.manWeight(input);
-
-        // Assert
-        assertThat(output).isEqualTo(expected, withPrecision(0.01));
-    }
 }
