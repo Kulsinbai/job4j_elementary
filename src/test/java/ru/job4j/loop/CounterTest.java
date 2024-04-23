@@ -49,4 +49,13 @@ class CounterTest {
         int expected = 28;
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    void whenStart5Finish15Then50() {
+        int start = 5;
+        int finish = 15;
+        int result = Counter.sumByEven(start, finish);
+        int expected = 50;
+        assertThat(result).isEqualTo(expected);
+    }
 }
