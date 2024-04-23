@@ -42,7 +42,7 @@ class CounterTest {
     }
 
     @Test
-    void whenStartMinus3Finish11Then60() {
+    void whenStartMinus3Finish11Then28() {
         int start = -3;
         int finish = 11;
         int result = Counter.sumByEven(start, finish);
