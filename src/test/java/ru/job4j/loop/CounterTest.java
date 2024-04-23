@@ -51,11 +51,11 @@ class CounterTest {
     }
 
     @Test
-    void whenStart5Finish15Then50() {
-        int start = 5;
-        int finish = 15;
+    void whenStart6Finish16Then66() {
+        int start = 6;
+        int finish = 16;
         int result = Counter.sumByEven(start, finish);
-        int expected = 50;
+        int expected = 66;
         assertThat(result).isEqualTo(expected);
     }
 }
